@@ -2,7 +2,10 @@
   "name": "dev-utils",
   "version": "0.0.0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "utils",
+    "utils-functions"
+  ],
   "main": "dist/dev-utils.umd.js",
   "module": "dist/dev-utils.es5.js",
   "typings": "dist/types/dev-utils.d.ts",
