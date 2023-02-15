@@ -1,5 +1,5 @@
 {
-  "name": "dev-utils",
+  "name": "dev-tool-functions",
   "version": "0.0.0",
   "description": "",
   "keywords": [
@@ -52,8 +52,8 @@
     "transform": {
       ".(ts|tsx)": "ts-jest"
     },
-    "testEnvironment": "node",
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testEnvironment": "jsdom",
+    "testRegex": "/test/.*\\.(test|spec)\\.(ts)$",
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -61,7 +61,8 @@
     ],
     "coveragePathIgnorePatterns": [
       "/node_modules/",
-      "/test/"
+      "/test/",
+      "/src/dev-utils.ts"
     ],
     "coverageThreshold": {
       "global": {
@@ -72,7 +73,8 @@
       }
     },
     "collectCoverageFrom": [
-      "src/*.{js,ts}"
+      "src/*.{js,ts}",
+      "src/**/*.{js,ts}"
     ]
   },
   "prettier": {
